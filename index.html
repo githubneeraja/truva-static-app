@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Truva Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">Truva Studio</a>
+      <button class="menu-toggle" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Build with confidence</p>
+          <h1>Modern static websites made easy.</h1>
+          <p class="hero-copy">Launch a clean responsive landing page with a polished style, fast animation, and an approachable layout.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Get in touch</a>
+            <a class="button secondary" href="#services">Explore services</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <p>Fast. Responsive. Accessible.</p>
+          <ul>
+            <li><strong>Responsive layout</strong> that works on phones and desktops.</li>
+            <li><strong>Animated toggles</strong> for interactive navigation.</li>
+            <li><strong>Simple structure</strong> for easy customization.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>What we offer</h2>
+          <p>Create polished web experiences for small businesses, portfolios, product launches, and personal brands.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Design system</h3>
+            <p>Custom layouts, typography, and color systems tailored to your brand.</p>
+          </article>
+          <article class="card">
+            <h3>Landing pages</h3>
+            <p>Fast-loading pages optimized for conversions and mobile presentation.</p>
+          </article>
+          <article class="card">
+            <h3>Interactive UI</h3>
+            <p>JavaScript enhancements that feel smooth without adding complexity.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="portfolio">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Sample projects</h2>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-card">
+            <h3>Brand Launch</h3>
+            <p>A clean, compelling landing page for a product rollout.</p>
+          </div>
+          <div class="portfolio-card">
+            <h3>Portfolio Site</h3>
+            <p>A personal showcase for freelance projects and case studies.</p>
+          </div>
+          <div class="portfolio-card">
+            <h3>Marketing Page</h3>
+            <p>Simple UI patterns built to highlight offerings and calls to action.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-heading">
+            <p class="eyebrow">Contact</p>
+            <h2>Start your project</h2>
+            <p>Send a quick message and we’ll respond as soon as possible.</p>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+
+          <button type="submit" class="button primary">Send message</button>
+          <p class="notice" id="form-notice"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Truva Studio. Crafted for responsive projects.</p>
+      <p>Built with HTML, CSS, and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
